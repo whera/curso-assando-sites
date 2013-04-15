@@ -2,7 +2,7 @@
         	<div class="col_w620_content">
             	<h3>Sobre o evento</h3>
             	<p>
-                    De Abril de 2013, a Outuro de 2014 haverá uma grande maratona que percorrerá as 26 capitais do Brasil.<br />
+                    De Abril de 2013, a Outuro de 2014 haverá uma grande maratona que percorrerá as 27 capitais do Brasil.<br />
                     Nessa maratona você encontrará conhecimentos sobre cakePHP através das:
                 </p>
                 <ul class="tmo_list">
