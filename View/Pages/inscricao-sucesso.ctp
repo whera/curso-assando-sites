@@ -1,0 +1,1 @@
+<h1>Inscrição registrada com sucesso!</h1>
