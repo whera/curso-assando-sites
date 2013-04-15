@@ -16,28 +16,33 @@
 						<?php echo $this->Form->input('nome', array(
 							'div'=>false,
 							'class'=>'required input_field',
-							'label'=>'Nome:'
+							'label'=>'Nome:',
+							'name'=>'nome'
 						)); ?>
 						<?php echo $this->Form->input('email', array(
 							'div'=>false,
 							'class'=>'required input_field',
-							'label'=>'E-mail:'
+							'label'=>'E-mail:',
+							'name'=>'email'
 						)); ?>
 						<?php echo $this->Form->input('telefone', array(
 							'div'=>false,
 							'class'=>'required input_field',
-							'label'=>'Telefone:'
+							'label'=>'Telefone:',
+							'name'  => 'telefone'
 						)); ?>
 						<?php echo $this->Form->input('endereco', array(
 							'div'=>false,
 							'class'=>'required input_field',
-							'label'=>'Endereço:'
+							'label'=>'Endereço:',
+							'name' => 'endereco'
 						)); ?>
 						<?php echo $this->Form->input('uf', array(
     						'options' => $estados,
     						'div'=>false,
 							'class'=>'required input_field',
-							'label'=>'Estado:'
+							'label'=>'Estado:',
+							'name' => 'uf'
 						)); ?>
 
 						<div class="cleaner_h10"></div>
