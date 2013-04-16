@@ -108,13 +108,6 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 
-// Do singular pro plural
-Inflector::rules('plural', array(
-	'irregular' => array(
-		'inscricao' => 'inscricoes'
-	)
-));
-
 // Regras Inflector
 Inflector::rules('singular', array('irregular' => array('inscricoes' => 'inscricao')));
 Inflector::rules('plural', array('irregular' => array('inscricao' => 'inscricoes')));
