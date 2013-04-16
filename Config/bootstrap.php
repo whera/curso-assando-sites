@@ -114,3 +114,7 @@ Inflector::rules('plural', array(
 		'inscricao' => 'inscricoes'
 	)
 ));
+
+// Regras Inflector
+Inflector::rules('singular', array('irregular' => array('inscricoes' => 'inscricao')));
+Inflector::rules('plural', array('irregular' => array('inscricao' => 'inscricoes')));
