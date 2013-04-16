@@ -1,9 +1,6 @@
 <?php
 class InscricoesController extends AppController {
 
-	// Definimos qual Model usar
-	public $uses = array('Inscricao');
-
 	public function index(){
 
 		$isPost = $this->request->is('post');
