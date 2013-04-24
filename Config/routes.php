@@ -35,7 +35,8 @@
 	//Router Testes Ronaldo
 	Router::connect('/quem-somos', array('controller'=>'pages', 'action'=>'display', 'quem-somos'));
 	Router::connect('/sobre-o-evento', array('controller'=>'pages', 'action'=>'display', 'sobre'));
-	Router::connect('/agenda', array('controller'=>'pages', 'action'=>'display', 'agenda'));
+	//Router::connect('/agenda', array('controller'=>'pages', 'action'=>'display', 'agenda'));
+	Router::connect('/cidades', array('controller'=>'cidades', 'action'=>'index'));
 	Router::connect('/local/:titulo',
 		array('controller'=>'pages', 'action'=>'display', 'local_evento'),
 		array('titulo'=>'[a-z0-9-]+')
