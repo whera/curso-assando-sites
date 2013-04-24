@@ -2,9 +2,9 @@
         	<div class="col_w620_content">
             
             	<h3>Inscrições abertas!</h3>
-                <p>Inscreva-se no formulário abaixo e aguarde mais informações sobre atrações que acontecerão em sua região.</p>
+                <p>Inscreva-se no formulário abaixo e aguarde mais informações sobre atrações que acontecerão em sua região.
+                </p>
 			</div>
-           
             <div id="contact_form">
             
             <h4>Inscreva-se!</h4>
