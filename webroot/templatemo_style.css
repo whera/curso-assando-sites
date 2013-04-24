@@ -349,3 +349,10 @@ em { color: #07a3e2; }
 .title_cake{
     margin-left: 70px;
 }
+
+.error-message{
+	text-align:left;
+	font-weight: bold;
+	color: red;
+	font-size: 11px;
+}
