@@ -15,6 +15,10 @@ class CidadesController extends AppController {
 			$this->redirect('/');
 		}
 	}
+
+
+	public function view($strCidade){
+	}
 }
 
 ?>
