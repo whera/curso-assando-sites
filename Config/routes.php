@@ -26,23 +26,43 @@
  * its action called 'display', and we pass a param to select the view file
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
-	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+	Router::connect(
+		'/',
+		array('controller' => 'pages', 'action' => 'display', 'home')
+	);
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
 	//Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
 	//Router Testes Ronaldo
-	Router::connect('/quem-somos', array('controller'=>'pages', 'action'=>'display', 'quem-somos'));
-	Router::connect('/sobre-o-evento', array('controller'=>'pages', 'action'=>'display', 'sobre'));
-	//Router::connect('/agenda', array('controller'=>'pages', 'action'=>'display', 'agenda'));
-	Router::connect('/cidades', array('controller'=>'cidades', 'action'=>'index'));
-	Router::connect('/local/:titulo',
-		array('controller'=>'pages', 'action'=>'display', 'local_evento'),
-		array('titulo'=>'[a-z0-9-]+')
+	Router::connect(
+		'/quem-somos',
+		array('controller'=>'pages', 'action'=>'display', 'quem-somos')
 	);
-	Router::connect('/inscreva-se', array('controller'=>'inscricoes', 'action'=>'index'));
-	Router::connect('/inscreva-se/sucesso', array('controller'=>'pages', 'action'=>'display', 'inscricao-sucesso'));
+	Router::connect(
+		'/sobre-o-evento',
+		array('controller'=>'pages', 'action'=>'display', 'sobre')
+	);
+	Router::connect(
+		'/cidades',
+		array('controller'=>'cidades', 'action'=>'index')
+	);
+
+	Router::connect(
+		'/inscreva-se',
+		array('controller'=>'inscricoes', 'action'=>'index')
+	);
+	Router::connect(
+		'/inscreva-se/sucesso',
+		array('controller'=>'pages', 'action'=>'display', 'inscricao-sucesso')
+	);
+
+	Router::connect(
+		'/cidades/:urlcidade',
+		array('controller' => 'cidades', 'action' => 'view'),
+		array('pass' => array('urlcidade'), 'urlcidade' => '[a-z0-9-]+')
+	);
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on
