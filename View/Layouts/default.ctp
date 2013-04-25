@@ -46,7 +46,7 @@
     
     <div id="templatemo_footer">
     
-    	 Exercicio 02 <a href="http://www.assando-sites.com.br">Curso Assando sites</a> |
+    	 Exercicio <a href="http://www.assando-sites.com.br">Curso Assando sites</a> |
     	 Designed by <a href="http://www.templatemo.com" target="_parent">Free CSS Templates</a>
          
     </div>
