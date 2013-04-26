@@ -1,4 +1,4 @@
-<div class="col_w620_w2col">
+
         	<div class="col_w620_content">
             	<h3>Sobre o evento</h3>
             	<p>
@@ -14,10 +14,3 @@
                 <p>E muitas novidades que vem por ai.</p>
 			</div>
         	<div class="cleaner_h40"></div>
-        </div>
-
-<!-- Painel Direita -->
-<?php
-	echo $this->Element('palestrantes');
-?>
-<!-- Fim Painel -->
