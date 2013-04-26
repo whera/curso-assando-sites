@@ -1,4 +1,6 @@
 <?php
+App::uses('AppModel', 'Model');
+
 class Palestra extends AppModel{
 	public $belongsTo = array('Palestrante');
 
