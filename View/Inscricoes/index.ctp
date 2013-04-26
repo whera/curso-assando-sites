@@ -53,7 +53,5 @@
             
            	</div>
         </div>
-        
-        <?php echo $this->Element('palestrantes'); ?>
     
     	<div class="cleaner"></div>
