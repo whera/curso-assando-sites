@@ -17,9 +17,13 @@
             <h3>O que espera por você!</h3>
             <?php foreach ($palestras as $palestra): ?>
             <div class="sb_news_box">
-            	<div class="news_date"><?php echo date("d/m/Y H:i", strtotime($palestra['Palestra']['data'])) ; ?></div>
+            	<div class="news_date"><?php echo date("d/m/Y H:i", strtotime($palestra['Palestra']['data'])); ?></div>
             	<img src="/images/avatar.gif" alt="Image 05" />
-        		<h6><a href="#"><?php echo $palestra['Palestrante']['nome']; ?></a></h6>
+        		<h6>
+                    <a href="/palestrantes/<?php echo Inflector::slug(strtolower($palestra['Palestrante']['nome']), '-'); ?>">
+                        <?php echo $palestra['Palestrante']['nome']; ?>
+                    </a>
+                </h6>
                 <strong><?php echo $palestra['Palestra']['titulo']; ?></strong>
               <div class="cleaner"></div>
             </div>
