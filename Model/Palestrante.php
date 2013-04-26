@@ -22,7 +22,7 @@ class Palestrante extends AppModel{
 
 	public function PegaPalestrante($strPalestrante){
 		$params = array(
-			'fields' = array('Palestrante.nome', 'Palestrante.descricao', 'Palestrante.site'),
+			'fields' => array('Palestrante.nome', 'Palestrante.descricao', 'Palestrante.site'),
 			'conditions' => array( 'Palestrante.slug' => $strPalestrante)
 		);
 
