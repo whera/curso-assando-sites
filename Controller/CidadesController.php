@@ -5,8 +5,6 @@ class CidadesController extends AppController {
 
 	public function index() {
 
-		//print_r($this->Cidade->PegaCidades());
-
 		$cidades = $this->Cidade->PegaCidades();
 		if( count($cidades) > 0 ){
 			$this->set('cidades', $cidades);
@@ -18,6 +16,19 @@ class CidadesController extends AppController {
 
 
 	public function view($strCidade){
+		$this->loadModel('Palestra');
+
+		$palestras = $this->Palestra->setPalestraCidade($strCidade);
+
+		if($palestras){
+			$this->set('palestras', $palestras);
+		}
+		else{
+			$this->redirect('/');
+		}
+
+
+
 	}
 }
 
