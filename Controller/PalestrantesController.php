@@ -21,8 +21,8 @@ class PalestrantesController extends AppController {
 	public function view($palestrante){
 		$palestrante = $this->Palestrante->PegaPalestrante($palestrante);
 
-		if($palestrantes){
-			$this->set('palestrantes', $palestrantes);
+		if($palestrante){
+			$this->set('palestrante', $palestrante);
 		}
 		else{
 			$this->redirect('/');
