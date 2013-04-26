@@ -15,27 +15,15 @@
         
         <div class="col_w300 col_last">
             <h3>O que espera por você!</h3>
+            <?php foreach ($palestras as $palestra): ?>
             <div class="sb_news_box">
-            	<div class="news_date">27/04/2013 07:00 - 09:00</div>
+            	<div class="news_date"><?php echo date("d/m/Y H:i", strtotime($palestra['Palestra']['data'])) ; ?></div>
             	<img src="/images/avatar.gif" alt="Image 05" />
-        		<h6><a href="#">Palestrante João</a></h6>
-                <strong>Assunto: </strong>Introduão ao CakePHP
+        		<h6><a href="#"><?php echo $palestra['Palestrante']['nome']; ?></a></h6>
+                <strong><?php echo $palestra['Palestra']['titulo']; ?></strong>
               <div class="cleaner"></div>
             </div>
-            <div class="sb_news_box">
-            	<div class="news_date">27/04/2013 09:30 - 11:30</div>
-	            <img src="/images/avatar.gif" alt="Image 06" />
-				<h6><a href="#">Palestrante Pedro</a></h6>
-				<strong>Assunto: </strong>MVC - O padrão de arquitetura de software
-                <div class="cleaner"></div>
-            </div>
-            <div class="sb_news_box">
-            	<div class="news_date">27/04/2013 14:00 - 16:00</div>
-            	<img src="/images/avatar.gif" alt="Image 07" />
-				<h6><a href="#">Palestrante Paulo</a></h6>
-				<strong>Assunto: </strong>CakePHP na prática
-                <div class="cleaner"></div>
-            </div>
+            <?php endforeach; ?>
             <!-- <div class="btn_more"><a href="#">Read more</a></div> -->
         </div>
     
