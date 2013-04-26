@@ -64,6 +64,12 @@
 		array('pass' => array('urlcidade'), 'urlcidade' => '[a-z0-9-]+')
 	);
 
+	Router::connect(
+		'/palestrantes/:palestrante',
+		array('controller'=>'palestrantes', 'action'=>'view'),
+		array('pass' => array('palestrante'), 'palestrante' => '[a-z0-9-]+')
+	);
+
 /**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.
