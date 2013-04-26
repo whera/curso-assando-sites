@@ -23,7 +23,9 @@ class Palestrante extends AppModel{
 	public function PegaPalestrante($strPalestrante){
 		$params = array(
 			'fields' => array('Palestrante.nome', 'Palestrante.descricao', 'Palestrante.site'),
-			'conditions' => array( 'Palestrante.slug' => $strPalestrante)
+			'conditions' => array( 'Palestrante.slug' => $strPalestrante),
+			'limit' => 1
+
 		);
 
 		$sql = $this->find('all', $params);
